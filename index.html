@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drugs Defender</title>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/registration.js"></script>
+ <script type="text/javascript">
+       $(document).on("mobileinit", function() {
+        $.extend( $.mobile , {
+          pageLoadErrorMessage: 'Either the page cannot be found or it cannot be loaded.'
+        });
+     });
+      $(document).on("pageinit","#page", function() {
+        alert("pageinit is bound!");
+      });
+    </script>
+</head>
+<body>
+
+<!--index-->
+
+<div data-role="page" id="index">
+  <div data-role="header">
+    <h1>Drug Defender</h1>
+  </div>
+
+   <div data-role="main" class="ui-content">
+    <p><center>Click on the link to the main page</center></p>
+    <p><center><a href="#main" data-transition="fade"><img src="/images/drugabuse.jpg" alt="drugabuse" style="width:304px;height:228px;"></a></center></p>
+  </div>
+
+  <div data-role="footer">
+    <h1>Say No to Drugs!</h1>
+  </div>
+</div> 
+
+<!--main-->
+<div data-role="page" id="main">
+  <div data-role="header">
+    <h1>Drug Defendere</h1>
+  </div>
+   
+  <div data-role="content">	
+     <ul data-role="listview">
+	 <li><a href="#intro">What's Drug?</a></li>
+     <li><a href="#drug">Kind of Drugs</a></li>
+     <li><a href="#anti">Anti-Drug</a></li>
+	 <!--<li><a href="#register">Register</a></li>-->
+	 <li><a href="registration.php" data-mini="true" data-ajax="false">Register</a></li>
+     <!--<li><a href="login.html">Login</a></li>-->
+	 <li><a href="login.php" data-mini="true" data-ajax="false">Login to discuss!</a></li>
+  </div>
+  
+   
+   <div data-role="main" class="ui-content">
+     <p>Click on the link to go back</p>
+     <a href="#index">Go to Homepage</a>
+   </div>
+
+  <div data-role="footer">
+    <h1>Say No to Drugs!</h1>
+  </div>
+</div> 
+
+<!--intro-->
+
+<div data-role="page" id="intro" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>What's Drugs?</h1>
+	</div>
+	<div data-role="content">	
+		
+		<p><center><img src="/images/drugs.jpg" alt="drugs" style="width:304px;height:228px;"></p></center>
+		
+		<p>Each drug has its own potential risks, and the risks can be potentiated by impurities or adulterants, and the unique reaction of each individual user. Drugs offered in the illicit market are not always what they are claimed to be.</p>
+		
+		<p>The buyer can rarely be sure of the content or the strength of the substance. If illicitly manufactured, the substances are likely to contain impurities or adulterants. It is also noteworthy that taking drugs with alcohol is even more dangerous and can be fatal.</p>	
+	</div>
+	<div data-role="footer">
+		<h4>Drugs will kill you! Don't try!</h4>
+	</div>
+</div>
+
+<!--Drug-->
+<div data-role="page" id="drug" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>Kind of Drugs</h1>
+	</div>
+	<div data-role="content">
+    <ul data-role="listview">	
+     <li><a href="#Narc">Narcotics Analgesics</a></li>
+     <li><a href="#Hall">Hallucinogens</a></li>
+     <li><a href="#Depr">Depressants</a></li>	
+     <li><a href="#Stim">Stimulants</a></li>
+     <li><a href="#Tran">Tranquillizers</a></li>
+     <li><a href="#Others ">Others</a></li>		
+	</div>
+	
+	<div data-role="footer">
+		<h4>Be Smart; Be free!</h4>
+	</div>
+</div>
+
+<!--Narc-->
+<div data-role="page" id="Narc" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>KNarcotics Analgesics</h1>
+	</div>
+	<div data-role="content">	
+		<table border="1">
+  			<tr>
+    		<th>Substance</th>
+    		<th>Street Names</th>
+    		<th>Medical Use</th>
+    		<th>Effect and Danger</th>
+  			</tr>
+  			
+  			<tr>
+    		<td>Heroin</td>
+    		<td>White powder, No.4, American money, HK money</td>
+    		<td>None</td>
+    		<td rowspan="6">1.Dependence;<br>
+				2.Drowsiness;<br>
+				3.Respiratory depression;<br>
+				4.Nausea;<br>
+				5.Withdrawal syndrome:<br>
+				watery eyes, runny nose, yawning, loss of appetite, irritability, tremors, panic, chills, sweating, cramps</td>
+  			</tr>
+  			
+  			<tr>			
+  			<td>Dipipanone (Wellconal)</td>
+    		<td>None</td>
+    		<td>Pain relief, prevent narcotic drug withdrawal discomfort</td>
+  			</tr>
+  			
+  			<tr>
+  			<td>Methadone </td>
+    		<td>None</td>
+    		<td>Treatment of narcotic drug addiction</td>
+  			</tr>
+  			
+  			
+  			<tr>
+  			<td>Physeptone </td>
+    		<td>None</td>
+    		<td>Treatment of narcotic drug addiction</td>
+  			</tr>
+  			
+  			<tr>
+  			<td>Morphine Ampoules</td>
+    		<td>None</td>
+    		<td>Pain relief</td>
+    	    </tr>
+  			
+  			<tr>
+  			<td>Opium</td>
+    		<td>None</td>
+    		<td>None</td>
+  			</tr>
+  			
+		</table>	
+	</div>
+	<div data-role="footer">
+		<h4>Let's quit!</h4>
+	</div>
+</div>
+
+<!--Hall-->
+<div data-role="page" id="Hall" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>Hallucinogens</h1>
+	</div>
+<div data-role="content">	
+		<table border="1">
+  			<tr>
+    		<th>Substance</th>
+    		<th>Street Names</th>
+    		<th>Medical Use</th>
+    		<th>Effect and Danger</th>
+  			</tr>
+  			
+  			<tr>
+    		<td>Cannabis </td>
+    		<td>Marijuana, hash, grass</td>
+    		<td>None</td>
+    		<td rowspan="2">
+    		1.Hallucination<br>
+			2.Impaired co-ordination<br>
+			3.Addiction<br>
+			4.Heightened risk of cancer<br>
+			5.Reduced concentration and impaired memory and judgment<br>
+			6.Depression and extreme suspicion of others<br>
+			7.Irritability and short temper<br>
+			8.Respiratory disease<br>
+			9.Regular users of cannabis are more likely to try other illicit drugs</td>
+  			</tr>
+  			
+  			<tr>			
+  			<td>Cannabis resin </td>
+    		<td>None</td>
+    		<td>None</td>
+  			</tr>
+  			
+  			<tr>
+  			<td>Synthetic cannabinoids</td>
+    		<td>K2, SPICE</td>
+    		<td>None</td>
+    		<td>1.Hallucinations<br>
+				2.Increased agitation<br>
+				3.Elevated blood pressure and heart rates<br>
+				4.Seizures</td>
+  			</tr>
+  			
+  			
+  			<tr>
+  			<td>LSD</td>
+    		<td>Black Sesame, Fing Ba</td>
+    		<td>None</td>
+    		<td>1.Disoriented behaviour<br>	
+				2.Impaired judgement<br>
+				3.Nausea and vomiting<br>
+				4.Increased pulse rate and elevated blood pressure</td>
+  			</tr>
+  			
+		</table>	
+	</div>
+	
+		<div data-role="footer">
+		<h4>Let's quit!</h4>
+	</div>
+</div>
+<!--Depr-->
+<div data-role="page" id="Depr" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>Stimulants</h1>
+	</div>
+	<div data-role="content">	
+		To be updated	
+	</div>
+	<div data-role="footer">
+		<h4>Let's quit!</h4>
+	</div>
+</div>
+
+<!--Stim-->
+<div data-role="page" id="Stim" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>Depressants</h1>
+	</div>
+	<div data-role="content">	
+		To be updated	
+	</div>
+	<div data-role="footer">
+		<h4>Let's quit!</h4>
+	</div>
+</div>
+
+<!--Trin-->
+<div data-role="page" id="Tran" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>Tranquillizers</h1>
+	</div>
+	<div data-role="content">	
+		To be updated	
+	</div>
+	<div data-role="footer">
+		<h4>Let's quit!</h4>
+	</div>
+</div>
+
+<!--others-->
+<div data-role="page" id="Others" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>Others</h1>
+	</div>
+	<div data-role="content">	
+		To be updated	
+	</div>
+	<div data-role="footer">
+		<h4>Let's quit!</h4>
+	</div>
+</div>
+
+<!--Anti-->
+	<div data-role="page" id="anti" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>Anti-Drugs</h1>
+	</div>
+	<div data-role="content">	
+		<p>Hong Kong has long-adopted a multi-modality approach to drug treatment and rehabilitation to cater for the divergent needs of drug dependent persons from varying backgrounds.</p>
+
+		<p>The main types of our drug treatment and rehabilitation programmes include - </p>
+
+		<p>Compulsory placement scheme operated by the Correctional Services Department;</p>
+		
+		<p>Voluntary out-patient methadone treatment programme provided by the Department of Health;</p>
+	
+		<p>Voluntary residential drug treatment and rehabilitation programmes run by non-governmental organisations. There are 38 drug treatment and rehabilitation centres and halfway houses in the territory (19 of them are subvented by Department of Health or Social Welfare Department);</p>
+			
+		<p>Community-based counselling services, including 11 counselling centres for psychotropic substance abusers and two centres for drug counselling under subvention of Social Welfare Department;</p>
+		
+	    <p>Substance abuse clinics operated by the Hospital Authority.</p>
+	
+	</div>
+	<div data-role="footer">
+		<h4>Let's quit!</h4>
+	</div>
+	
+<!--Register
+	<div data-role="page" id="register" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>Register</h1>
+	</div>
+	<div class="container">
+	<div class="main">
+		<form class="form" method="post" action="#">
+			<h2>Create Registration Form Using jQuery</h2>
+			<label>Name :</label>
+			<input type="text" name="dname" id="name">
+			<label>Email :</label>
+			<input type="text" name="demail" id="email">
+			<label>Password :</label>
+			<input type="password" name="password" id="password">
+			<label>Confirm Password :</label>
+			<input type="password" name="cpassword" id="cpassword">
+			<input type="button" name="register" id="register" value="Register">
+		</form>
+	</div>
+	</div>
+	
+	<div data-role="footer">
+		<h4>Let's quit!</h4>
+	</div>
+	</div> -->
+
+	
+	<!--login-->
+	<!--<div data-role="page" id="login" data-add-back-btn="Home">
+	<div data-role="header">
+		<h1>Others</h1>
+	</div>
+	<div data-role="content">	
+		To be updated	
+	</div>
+	<div data-role="footer">
+		<h4>Let's quit!</h4>
+	</div>
+    </div>-->
+</div>
+
+</body>
+</html>
